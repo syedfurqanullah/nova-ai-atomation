@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NovaAI gives modern teams an elegant AI workspace for automation, insights, and growth."
+    />
+    <meta name="theme-color" content="#17152e" />
+    <meta
+      property="og:title"
+      content="NovaAI - AI automation for modern teams"
+    />
+    <meta
+      property="og:description"
+      content="An elegant AI workspace for automation, insights, and growth."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NovaAI" />
+    <meta property="og:image" content="Images/novaai-dashboard.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="NovaAI - AI automation for modern teams"
+    />
+    <meta
+    
+      name="twitter:description"
+      content="An elegant AI workspace for automation, insights, and growth."
+    />
+    <meta name="twitter:image" content="Images/novaai-dashboard.svg" />
+    <title>NovaAI - AI automation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Site navigation -->
+    <header class="site-header">
+      <div class="container navigation">
+        <a class="brand" href="#home" aria-label="NovaAI home"
+          >Nova<span>AI</span></a
+        >
+        <button
+          class="menu-button"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="primary-nav" class="nav-menu" aria-label="Primary navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+          <div class="nav-actions">
+            <button
+              id="themeToggle"
+              class="theme-toggle"
+              type="button"
+              aria-label="Enable dark mode"
+              aria-pressed="false"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 3v2m0 14v2M3 12h2m14 0h2m-3.6-5.4 1.4-1.4M5.2 18.8l1.4-1.4m0-10.8-1.4-1.4m12.2 13.6-1.4-1.4M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"
+                />
+              </svg></button
+            ><span id="accountStatus" class="account-status" hidden></span
+            ><button id="authEntry" class="button button--small" type="button">
+              Create another account
+            </button
+            ><button id="logoutButton" class="text-action" type="button" hidden>
+              Log out
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero -->
+      <section id="home" class="hero">
+        <div class="hero-orb hero-orb--one" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb--two" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span>*</span> AI-powered workspace</p>
+            <h1>Make every move <span>smarter with AI.</span></h1>
+            <p class="hero-description">
+              NovaAI turns scattered workflows and business data into clear
+              actions - so your team can build, decide, and grow faster.
+            </p>
+            <div class="hero-actions">
+              <button class="button" type="button" data-scroll-pricing>
+                Start your 14-day free trial <span>&rarr;</span></button
+              ><a class="button button--ghost" href="#features"
+                >Explore features</a
+              >
+            </div>
+            <p class="hero-trust-note">No credit card required • 14-day free trial</p>
+            <div class="proof-points">
+              <div><strong>50K+</strong><span>active users</span></div>
+              <div><strong>4.9/5</strong><span>customer rating</span></div>
+              <div><strong>99.9%</strong><span>uptime SLA</span></div>
+            </div>
+          </div>
+          <div class="product-preview">
+            <!-- Lightweight local product preview tailored to NovaAI's workflow platform. -->
+            <img
+              src="Images/novaai-dashboard.svg"
+              width="1536"
+              height="1024"
+              fetchpriority="high"
+              alt="NovaAI dashboard showing workflow activity, automation impact, task volume, hours saved, and AI recommendations"
+            />
+            <div class="growth-card">
+              <span aria-hidden="true">&nearr;</span>
+              <div><small>Weekly growth</small><strong>+24.8%</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social proof -->
+      <section class="logo-strip" aria-label="Trusted by ambitious teams">
+        <div class="container">
+          <small>TRUSTED BY TEAMS AT</small><strong>vertex</strong
+          ><strong>Northstar</strong><strong>LOOP</strong
+          ><strong>Altitude</strong><strong>boldly</strong>
+        </div>
+      </section>
+
+      <!-- Product features -->
+      <section id="features" class="section section--soft">
+        <div class="container">
+          <header class="section-heading">
+            <p class="eyebrow">Everything in one place</p>
+            <h2>Built to help your best work move faster.</h2>
+            <p>
+              From repetitive tasks to critical decisions, NovaAI gives your
+              team an intelligent advantage.
+            </p>
+          </header>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="m12 2 1.5 6.5L20 10l-6.5 1.5L12 18l-1.5-6.5L4 10l6.5-1.5L12 2Z"
+                  />
+                </svg>
+              </div>
+              <h3>Intelligent automation</h3>
+              <p>
+                Build reliable workflows that handle busywork in the background,
+                without adding more tools.
+              </p>
+              <a href="#how-it-works">Learn more <span>&rarr;</span></a>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon feature-icon--mint">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 17c2.2-8 5-8 7.2 0 2.2 8 5 8 8.8-5M4 7c2.2 8 5 8 7.2 0 2.2-8 5-8 8.8 5"
+                  />
+                </svg>
+              </div>
+              <h3>Instant insights</h3>
+              <p>
+                Ask questions in plain language and turn complex business data
+                into clear next steps.
+              </p>
+              <a href="#how-it-works">Learn more <span>&rarr;</span></a>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon feature-icon--gold">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m13 2-9 12h7l-1 8 10-13h-7l0-7Z" />
+                </svg>
+              </div>
+              <h3>Built to scale</h3>
+              <p>
+                Move quickly with security, permissions, and performance your
+                growing team can trust.
+              </p>
+              <a href="#how-it-works">Learn more <span>&rarr;</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Metrics -->
+      <section class="metrics">
+        <div class="container">
+          <div>
+            <strong>50K+</strong>
+            <p>active users worldwide</p>
+          </div>
+          <div>
+            <strong>120+</strong>
+            <p>countries supported</p>
+          </div>
+          <div>
+            <strong>99%</strong>
+            <p>customer satisfaction</p>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <p>human support</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section id="how-it-works" class="section">
+        <div class="container">
+          <header class="section-heading">
+            <p class="eyebrow">Simple by design</p>
+            <h2>From first click to real impact.</h2>
+            <p>
+              Set up your workspace in minutes, then let NovaAI do the heavy
+              lifting.
+            </p>
+          </header>
+          <ol class="process">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Connect your tools</h3>
+                <p>
+                  Bring existing files, data, and workflows into one secure
+                  workspace.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Set your workflow</h3>
+                <p>
+                  Tell NovaAI what should happen and tailor it to the way your
+                  team works.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Focus on growth</h3>
+                <p>
+                  Use real-time insights and automated execution where it
+                  matters most.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="section section--soft">
+        <div class="container">
+          <header class="section-heading">
+            <p class="eyebrow">Simple, transparent pricing</p>
+            <h2>Pick the plan that fits your pace.</h2>
+            <p>Start with a 14-day free trial. Upgrade when you are ready.</p>
+            <div
+              class="billing-toggle"
+              role="group"
+              aria-label="Pricing billing period"
+            >
+              <button type="button" class="is-selected" data-billing="monthly">
+                Monthly</button
+              ><button type="button" data-billing="yearly">
+                Yearly <span>Save 20%</span>
+              </button>
+            </div>
+          </header>
+          <div class="pricing-grid">
+            <article class="price-card" data-plan-card="starter">
+              <div class="plan-label">For beginners</div>
+              <h3>Starter</h3>
+              <p>For individuals getting started.</p>
+              <strong class="price"
+                ><sup>$</sup><span data-monthly="19" data-yearly="15">19</span>
+                <small data-price-suffix>/ month</small></strong
+              >
+              <ul>
+                <li>Up to 10 projects</li>
+                <li>AI dashboard</li>
+                <li>Core analytics</li>
+                <li>Email support</li>
+              </ul>
+              <button
+                class="button button--ghost button--block"
+                type="button"
+                data-open-checkout
+                data-plan="starter"
+              >
+                Choose Starter
+              </button>
+            </article>
+            <article class="price-card price-card--featured" data-plan-card="professional">
+              <span class="popular">Best value</span>
+              <div class="plan-label plan-label--featured">Most popular</div>
+              <h3>Professional</h3>
+              <p>For fast-moving teams.</p>
+              <strong class="price"
+                ><sup>$</sup><span data-monthly="49" data-yearly="39">49</span>
+                <small data-price-suffix>/ month</small></strong
+              >
+              <ul>
+                <li>Unlimited projects</li>
+                <li>AI automation</li>
+                <li>Team collaboration</li>
+                <li>Priority support</li>
+              </ul>
+              <button
+                class="button button--block"
+                type="button"
+                data-open-checkout
+                data-plan="professional"
+              >
+                Choose Professional
+              </button>
+            </article>
+            <article class="price-card" data-plan-card="business">
+              <div class="plan-label">For scaling teams</div>
+              <h3>Business</h3>
+              <p>For teams operating at scale.</p>
+              <strong class="price"
+                ><sup>$</sup><span data-monthly="99" data-yearly="79">99</span>
+                <small data-price-suffix>/ month</small></strong
+              >
+              <ul>
+                <li>Everything in Professional</li>
+                <li>Advanced permissions</li>
+                <li>API access</li>
+                <li>Dedicated success manager</li>
+              </ul>
+              <button
+                class="button button--ghost button--block"
+                type="button"
+                data-open-checkout
+                data-plan="business"
+              >
+                Choose Business
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section">
+        <div class="container">
+          <header class="section-heading">
+            <p class="eyebrow">Loved by teams</p>
+            <h2>Workflows people actually enjoy.</h2>
+          </header>
+          <div class="testimonial-grid">
+            <figure>
+              <div class="stars" aria-label="5 out of 5 stars">*****</div>
+              <blockquote>
+                "NovaAI gave us the clarity to make decisions faster. Our team
+                has saved hours every week."
+              </blockquote>
+              <figcaption>
+                <img
+                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&amp;fit=crop&amp;w=96&amp;h=96&amp;q=85"
+                  width="48"
+                  height="48"
+                  alt="Portrait of Ali Khan"
+                />
+                <div><strong>Ali Khan</strong><small>CEO, TechNova</small></div>
+              </figcaption>
+            </figure>
+            <figure>
+              <div class="stars" aria-label="5 out of 5 stars">*****</div>
+              <blockquote>
+                "The automation is incredibly easy to set up, and the dashboard
+                makes business health instantly visible."
+              </blockquote>
+              <figcaption>
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=96&amp;h=96&amp;q=85"
+                  width="48"
+                  height="48"
+                  alt="Portrait of Sarah Ahmed"
+                />
+                <div>
+                  <strong>Sarah Ahmed</strong
+                  ><small>Marketing Director, Loop</small>
+                </div>
+              </figcaption>
+            </figure>
+            <figure>
+              <div class="stars" aria-label="5 out of 5 stars">*****</div>
+              <blockquote>
+                "It feels like having another thoughtful operator on the team.
+                Powerful, clear, and pleasant to use."
+              </blockquote>
+              <figcaption>
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=96&amp;h=96&amp;q=85"
+                  width="48"
+                  height="48"
+                  alt="Portrait of Ahmed Raza"
+                />
+                <div>
+                  <strong>Ahmed Raza</strong><small>Founder, StartupX</small>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section section--soft">
+        <div class="container faq-layout">
+          <header class="section-heading section-heading--left">
+            <p class="eyebrow">Questions, answered</p>
+            <h2>Everything you need to know.</h2>
+            <p>Still need help? <a href="#contact">Talk to our team.</a></p>
+          </header>
+          <div class="faq-list">
+            <details open>
+              <summary>
+                Can I try NovaAI before subscribing?<span>+</span>
+              </summary>
+              <p>
+                Yes. Every plan starts with a 14-day free trial, with no credit
+                card required.
+              </p>
+            </details>
+            <details>
+              <summary>Can I change my plan later?<span>+</span></summary>
+              <p>
+                Absolutely. You can upgrade, downgrade, or cancel whenever your
+                needs change.
+              </p>
+            </details>
+            <details>
+              <summary>Is my data secure?<span>+</span></summary>
+              <p>
+                We use encrypted connections, role-based permissions, and secure
+                infrastructure.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final call-to-action -->
+      <section class="final-cta">
+        <div class="container">
+          <p class="eyebrow">Ready when you are</p>
+          <h2>Give your team more time for meaningful work.</h2>
+          <p>Join thousands of ambitious teams already building with NovaAI.</p>
+          <button
+            class="button button--light"
+            type="button"
+            data-scroll-pricing
+          >
+            Start your 14-day free trial <span>&rarr;</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <div class="mobile-cta-bar" aria-label="Quick actions">
+      <button class="button button--block" type="button" data-scroll-pricing>
+        Start free trial
+      </button>
+    </div>
+
+    <!-- Professional footer -->
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="#home">Nova<span>AI</span></a>
+          <p>
+            AI automation for modern teams that want to move with confidence.
+          </p>
+        </div>
+        <div>
+          <h2>Product</h2>
+          <a href="#features">Features</a><a href="#pricing">Pricing</a
+          ><a href="#how-it-works">How it works</a>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <h2>Connect</h2>
+          <p>Follow the creator and explore more work.</p>
+          <a
+            class="github-link"
+            href="https://github.com/syedfurqanullah"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.69-.21.69-.48v-1.7c-2.8.61-3.39-1.19-3.39-1.19-.46-1.16-1.12-1.47-1.12-1.47-.91-.63.07-.62.07-.62 1.01.07 1.54 1.04 1.54 1.04.9 1.54 2.36 1.1 2.94.84.09-.65.35-1.1.64-1.35-2.24-.26-4.6-1.12-4.6-4.98 0-1.1.39-2 .3-2.72.1-.25.03-1.28-.07-2.65 0 0 .84-.27 2.75 1.04A9.55 9.55 0 0 1 12 6.4c.85 0 1.7.12 2.5.34 1.91-1.31 2.75-1.04 2.75-1.04.1 1.37.17 2.4.07 2.65.61.72.98 1.62.98 2.72 0 3.87-2.36 4.72-4.61 4.98.36.31.68.9.68 1.81v2.68c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"
+              />
+            </svg>
+            GitHub profile &nearr;</a
+          >
+          <a
+            class="github-link linkedin-link"
+            href="https://www.linkedin.com/in/syed-furqan-ullah/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.2 8.3H2.7V21h3.5V8.3ZM4.5 2.7A2.1 2.1 0 1 0 4.5 7a2.1 2.1 0 0 0 0-4.3ZM21.3 13.7c0-3.8-2-5.6-4.8-5.6-2.2 0-3.2 1.2-3.8 2v-1.8H9.2V21h3.5v-6.3c0-1.7.3-3.3 2.4-3.3 2.1 0 2.1 2 2.1 3.4V21h3.5v-7.3Z" />
+            </svg>
+            LinkedIn profile</a
+          >
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span id="year"></span> NovaAI. All rights reserved.</p>
+        <a href="#home">Back to top &uarr;</a>
+      </div>
+    </footer>
+
+    <!-- Auth modal: JavaScript switches between login, register and reset views. -->
+    <div
+      id="authModal"
+      class="auth-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Account access"
+      aria-hidden="true"
+    >
+      <div class="modal-backdrop" data-close-auth></div>
+      <div class="auth-dialog">
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Close dialog"
+          data-close-auth
+        >
+          &times;
+        </button>
+        <div class="auth-view" data-view="login">
+          <p class="eyebrow">Welcome back</p>
+          <h2>Sign in to NovaAI</h2>
+          <p class="auth-intro">
+            Enter your details to continue to your workspace.
+          </p>
+          <form id="loginForm" novalidate>
+            <label for="loginEmail">Email address</label
+            ><input
+              id="loginEmail"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required
+            /><label for="loginPassword">Password</label>
+            <div class="password-field">
+              <input
+                id="loginPassword"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Enter your password"
+                required
+              /><button
+                type="button"
+                class="password-toggle"
+                aria-label="Show password"
+                aria-pressed="false"
+              >
+                Show
+              </button>
+            </div>
+            <output class="form-message" aria-live="polite"></output
+            ><button class="button button--block" type="submit">Sign in</button>
+          </form>
+          <p class="auth-links">
+            <button type="button" data-auth-view="forgot">
+              Forgot password?
+            </button>
+            &middot; New to NovaAI?
+            <button type="button" data-auth-view="register">
+              Create account
+            </button>
+          </p>
+        </div>
+        <div class="auth-view" data-view="register" hidden>
+          <p class="eyebrow">Start your free trial</p>
+          <h2>Create your NovaAI account</h2>
+          <p class="auth-intro">
+            No credit card required. Your workspace is ready in minutes.
+          </p>
+          <form id="registerForm" novalidate>
+            <label for="registerName">Full name</label
+            ><input
+              id="registerName"
+              type="text"
+              autocomplete="name"
+              placeholder="Your name"
+              required
+            /><label for="registerEmail">Email address</label
+            ><input
+              id="registerEmail"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required
+            /><label for="registerPassword">Create password</label>
+            <div class="password-field">
+              <input
+                id="registerPassword"
+                type="password"
+                autocomplete="new-password"
+                minlength="8"
+                placeholder="At least 8 characters"
+                required
+              /><button
+                type="button"
+                class="password-toggle"
+                aria-label="Show password"
+                aria-pressed="false"
+              >
+                Show
+              </button>
+            </div>
+            <output class="form-message" aria-live="polite"></output
+            ><button class="button button--block" type="submit">
+              Create free account
+            </button>
+          </form>
+          <p class="auth-links">
+            Already have an account?
+            <button type="button" data-auth-view="login">Sign in</button>
+          </p>
+        </div>
+        <div class="auth-view" data-view="forgot" hidden>
+          <p class="eyebrow">Password recovery</p>
+          <h2>Reset your password</h2>
+          <p class="auth-intro">Enter your account email to receive a temporary verification code.</p>
+          <form id="forgotForm" novalidate>
+            <label for="forgotEmail">Email address</label>
+            <input id="forgotEmail" type="email" autocomplete="email" placeholder="you@example.com" required />
+            <output class="form-message" aria-live="polite"></output>
+            <button class="button button--block" type="submit">Send verification code</button>
+          </form>
+          <p class="auth-links">
+            <button type="button" data-auth-view="register">Create another account</button>
+            <span aria-hidden="true">&middot;</span>
+            <button type="button" data-auth-view="login">Back to sign in</button>
+          </p>
+        </div>
+        <div class="auth-view" data-view="reset" hidden>
+          <p class="eyebrow">Verify your account</p>
+          <h2>Create a new password</h2>
+          <p id="resetCodeHint" class="auth-intro"></p>
+          <form id="resetForm" novalidate>
+            <label for="resetCode">Verification code</label>
+            <input id="resetCode" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" placeholder="6-digit code" required />
+            <label for="resetPassword">New password</label>
+            <div class="password-field">
+              <input id="resetPassword" type="password" autocomplete="new-password" minlength="8" placeholder="At least 8 characters" required />
+              <button type="button" class="password-toggle" aria-label="Show password" aria-pressed="false">Show</button>
+            </div>
+            <output class="form-message" aria-live="polite"></output>
+            <button class="button button--block" type="submit">Update password</button>
+          </form>
+          <p class="auth-links">
+            <button type="button" data-auth-view="forgot">Use a different email</button>
+            <span aria-hidden="true">&middot;</span>
+            <button type="button" data-auth-view="login">Back to sign in</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Front-end checkout demo: no real payment information is processed. -->
+    <div
+      id="checkoutModal"
+      class="auth-modal checkout-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Plan checkout"
+      aria-hidden="true"
+    >
+      <div class="modal-backdrop" data-close-checkout></div>
+      <div class="auth-dialog checkout-dialog">
+        <button class="modal-close" type="button" aria-label="Close checkout" data-close-checkout>&times;</button>
+        <p class="eyebrow">Demo checkout</p>
+        <h2 id="checkoutTitle">Start Professional</h2>
+        <p class="auth-intro">Set up your 14-day trial. Demo card details stay in your browser and are never charged.</p>
+        <div class="card-preview" aria-hidden="true">
+          <div>
+            <span id="cardBrand">Debit</span>
+            <strong id="previewCardNumber">4242 4242 4242 4242</strong>
+          </div>
+          <div>
+            <small id="previewCardName">YOUR NAME</small>
+            <small id="previewCardExpiry">MM/YY</small>
+          </div>
+        </div>
+        <div class="checkout-summary">
+          <div><span id="checkoutPlanName">Professional plan</span><strong id="checkoutPrice">$49 <small>/ month</small></strong></div>
+          <ul id="checkoutFeatures"><li>Unlimited projects</li><li>AI automation</li><li>Priority support</li></ul>
+        </div>
+        <form id="checkoutForm" novalidate>
+          <label for="checkoutName">Full name</label>
+          <input id="checkoutName" type="text" autocomplete="name" required />
+          <label for="checkoutEmail">Email address</label>
+          <input id="checkoutEmail" type="email" autocomplete="email" required />
+          <label for="checkoutCard">Debit card number <span>(demo)</span></label>
+          <input id="checkoutCard" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="4242 4242 4242 4242" minlength="19" maxlength="19" required />
+          <div class="checkout-fields">
+            <div>
+              <label for="checkoutExpiry">Expiry</label>
+              <input id="checkoutExpiry" type="text" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/YY" minlength="5" maxlength="5" required />
+            </div>
+            <div>
+              <label for="checkoutCvc">CVC</label>
+              <input id="checkoutCvc" type="text" inputmode="numeric" autocomplete="cc-csc" placeholder="123" minlength="3" maxlength="4" required />
+            </div>
+          </div>
+          <label for="checkoutZip">Billing ZIP / postal code</label>
+          <input id="checkoutZip" type="text" autocomplete="postal-code" placeholder="10001" minlength="4" maxlength="10" required />
+          <output class="form-message" aria-live="polite"></output>
+          <button class="button button--block" type="submit">Start 14-day trial</button>
+        </form>
+      </div>
+    </div>
+    <aside class="chat-widget" aria-label="NovaAI chat assistant">
+      <button
+        id="chatToggle"
+        class="chat-toggle"
+        type="button"
+        aria-label="Open AI chat assistant"
+        aria-controls="chatPanel"
+        aria-expanded="false"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 11.5a7.5 7.5 0 0 1-8 7.5 8.8 8.8 0 0 1-3.5-.7L4 20l1.5-4A7.2 7.2 0 0 1 4 11.5 7.5 7.5 0 0 1 12 4a7.5 7.5 0 0 1 8 7.5Z" />
+          <path d="M8 12h.01M12 12h.01M16 12h.01" />
+        </svg>
+        <span>Ask NovaAI</span>
+      </button>
+      <section id="chatPanel" class="chat-panel" aria-label="NovaAI assistant" hidden>
+        <header class="chat-header">
+          <div><span class="chat-status"></span><strong>NovaAI Assistant</strong><small>Typically replies instantly</small></div>
+          <button id="chatClose" type="button" aria-label="Close chat">&times;</button>
+        </header>
+        <div id="chatMessages" class="chat-messages" role="log" aria-live="polite"></div>
+        <div id="quickReplies" class="quick-replies" aria-label="Suggested questions">
+          <button type="button">What is NovaAI?</button><button type="button">Features</button><button type="button">Pricing</button><button type="button">How does it work?</button><button type="button">Contact</button>
+        </div>
+        <form id="chatForm" class="chat-form">
+          <label class="sr-only" for="chatInput">Your message</label>
+          <input id="chatInput" type="text" maxlength="280" placeholder="Ask anything..." autocomplete="off" required />
+          <button type="submit" aria-label="Send message">&rarr;</button>
+        </form>
+        <button id="clearChat" class="clear-chat" type="button">Clear chat</button>
+      </section>
+    </aside>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
