@@ -190,7 +190,7 @@ img {
   bottom: 12px;
   left: 12px;
   z-index: 150;
-  display: none;
+  display: none !important;
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(231, 231, 241, 0.9);
@@ -1072,7 +1072,7 @@ footer {
     width: min(var(--container), calc(100% - 32px));
   }
   .mobile-cta-bar {
-    display: block;
+    display: none !important;
     bottom: 12px;
   }
   .navigation {
@@ -1085,7 +1085,7 @@ footer {
   }
   .chat-widget {
     right: 16px;
-    bottom: 86px;
+    bottom: 24px;
   }
   .chat-toggle {
     width: 52px;
@@ -1256,7 +1256,7 @@ footer {
 }
 .chat-widget {
   position: fixed;
-  z-index: 900;
+  z-index: 999;
   right: 24px;
   bottom: 24px;
 }

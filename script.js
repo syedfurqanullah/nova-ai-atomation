@@ -508,45 +508,45 @@ function getBotResponse(question) {
   const text = question.toLowerCase();
 
   if (text.includes("how are you") || text.includes("how r u") || text.includes("how are you doing")) {
-    return "I’m doing great — and I can help you explore this product, its features, and the best next step for your website or business.";
+    return "Doing awesome, thanks for asking! 😊 I'm here to help you explore NovaAI—from features and pricing to workflow setup. What catches your interest?";
   }
   if (text.includes("hi") || text.includes("hello") || text.includes("hey") || text.includes("good morning") || text.includes("good evening")) {
-    return "Hey! I can help you explore NovaAI, understand the pricing, or answer quick questions about the website.";
+    return "Hey there! Welcome to NovaAI 👋 I'm your assistant here. Curious about our AI automation platform, pricing, or how it all works? Let's dive in!";
   }
   if (text.includes("who are you") || text.includes("what are you") || text.includes("who created this") || text.includes("who made this")) {
-    return "I’m the NovaAI assistant on this landing page. I’m here to explain the product, the value, and how the site is structured for visitors.";
+    return "I'm the NovaAI virtual assistant—here to guide you through our product and help you find exactly what you're looking for. Think of me as your personal product tour guide! 🤖";
   }
   if (text.includes("what is novaai") || text.includes("what is this website") || text.includes("what is this") || text.includes("novaai")) {
-    return "NovaAI is an AI-powered workspace built to automate workflows, simplify business decisions, and help teams move faster with clearer insights.";
+    return "NovaAI is an elegant AI-powered workspace designed for modern teams. We automate repetitive workflows, deliver instant insights, and help you make smarter decisions faster. Perfect for businesses looking to scale efficiently! 🚀";
   }
   if (text.includes("who are you") && text.includes("owner") || text.includes("who owns this") || text.includes("who is the owner") || text.includes("who is behind this")) {
-    return "This is a NovaAI product demo landing page built to showcase a modern AI workflow platform and its features.";
+    return "This is the official NovaAI landing page—showcasing our modern, AI-driven workflow automation platform built for ambitious teams worldwide.";
   }
   if (text.includes("feature") || text.includes("features") || text.includes("tools") || text.includes("product")) {
-    return "NovaAI includes workflow automation, instant AI insights, analytics, collaboration tools, and scalable permissions built for growing teams.";
+    return "Great question! NovaAI packs powerful features: 🎯 Workflow Automation (handle routine tasks automatically), 📊 AI-Powered Insights (data analysis in seconds), 🤝 Team Collaboration (built-in permission controls), and 📈 Advanced Analytics. All designed to save time and boost productivity!";
   }
   if (text.includes("pricing") || text.includes("price") || text.includes("cost") || text.includes("plan") || text.includes("plans")) {
-    return "Plans start at $19 per month. You can switch to yearly billing to save 20%, or compare the available options in the pricing section.";
+    return "Our pricing is transparent and flexible! 💰 Plans start at just $19/month for individuals. Need more? Our Professional and Enterprise plans come with advanced features. Plus, save 20% with yearly billing! Check the pricing section above for full details.";
   }
   if (text.includes("how does it work") || text.includes("how does this work") || text.includes("how it works") || text.includes("start")) {
-    return "Connect your tools, define the workflow, and let NovaAI handle routine tasks while your team focuses on growth and decision-making.";
+    return "Simple three-step process: 1️⃣ Connect your favorite tools and data sources, 2️⃣ Define your workflows visually (no coding needed!), 3️⃣ Let NovaAI automate while your team focuses on strategy and growth. It's that smooth!";
   }
   if (text.includes("demo") || text.includes("trial") || text.includes("book") || text.includes("free trial")) {
-    return "You can start with a 14-day free trial from the pricing section and explore the product before committing.";
+    return "Perfect timing! 🎁 We offer a 14-day free trial—no credit card needed. You get full access to explore all features and see how NovaAI transforms your workflow. Ready to start? Head to the pricing section and claim your trial!";
   }
   if (text.includes("support") || text.includes("help") || text.includes("need help") || text.includes("can you help")) {
-    return "Absolutely — I can help explain the product, pricing, workflow, or the best next step for getting started.";
+    return "Absolutely, I've got you! 💪 I can walk you through features, explain pricing, break down workflows, or help you pick the right plan. What's on your mind?";
   }
   if (text.includes("nice") || text.includes("good") || text.includes("looks") || text.includes("design") || text.includes("beautiful")) {
-    return "Thanks! The design is meant to feel clean, modern, and user-friendly while staying focused on conversions and trust.";
+    return "Thanks so much! 🎨 We designed this interface to be clean, modern, and intuitive—because great tools shouldn't be complicated. Your experience matters to us!";
   }
   if (text.includes("where") || text.includes("contact") || text.includes("email") || text.includes("call") || text.includes("message")) {
-    return "This demo is mainly focused on showcasing the product experience. For a real business setup, the site would typically include a direct contact form, email, or sales contact details.";
+    return "Good question! This demo showcases our product experience. For direct inquiries about partnerships, enterprise deals, or custom solutions, most businesses would find contact details in our footer or dedicated contact page. Always happy to connect! 📧";
   }
   if (text.includes("your name") || text.includes("what is your name") || text.includes("name")) {
-    return "I’m the NovaAI assistant on this website, designed to guide visitors through the product, pricing, and workflow experience.";
+    return "I'm your NovaAI Assistant! 🤖 My job is to guide you through everything NovaAI—features, pricing, workflows, and onboarding. Think of me as your friendly product expert right here on this page.";
   }
-  return "Thanks for reaching out. I can help with NovaAI features, pricing, workflows, onboarding, or general product questions in a simple and professional way.";
+  return "Great question! 👀 I'm here to help with NovaAI features, pricing plans, workflow automation, getting started, or anything else product-related. What would you like to know?";
 }
 function addToHistory(role, text) {
   const history = getChatHistory();

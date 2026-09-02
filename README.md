@@ -1,22 +1,47 @@
 # Nova AI Automation
 
-A modern SaaS landing page for an AI automation brand, built with HTML, CSS, and JavaScript.
+A modern and fully responsive AI SaaS landing page built with HTML5, Modern CSS3, and JavaScript.
+
+Nova AI Automation is a frontend project focused on modern UI design, responsive layouts, interactive components, and creating a realistic SaaS product experience
+
+## Live Demo 
+Nova AI Automation — SaaS Landing Page
+https://nova-ai-automation.netlify.app/
+
+## 📸 Screenshots
+
+### Dashboard
+
+![Nova Ai Dashboard](./Images/dashboard.png)
+
+### Features
+
+![Nova AI Features](./Images/features.png)
+
+### How It Works
+
+![Nova AI How It Works](./Images/how%20its%20work.png)
+
+### Responsive
+
+![Nova AI Responsive](./Images/responsive.png)
 
 ## Features
 
-- Responsive landing page design
-- Hero section with call-to-action buttons
-- Pricing cards with featured plan highlight
-- Demo authentication flow and checkout modal
-- Dark mode toggle
-- AI chat widget for product-style interaction
-- Mobile-friendly layout and sticky CTA
+- Fully Responsive SaaS UI
+- AI workspace & dashboard preview
+- Create Account & Login UI
+- Pricing plans & testimonials
+- Dark mode
+- Interactive AI chat widget
+- Authentication & checkout UI
+- Smooth animations & transitions
 
-## Tech Stack
+## Technologies 
 
 - HTML5
-- CSS3
-- JavaScript
+- Modern CSS3
+- JavaScript (ES6+)
 
 ## Project Structure
 
@@ -44,7 +69,7 @@ http://localhost:8000
 
 ## Notes
 
-This project is a front-end demo for showcasing a premium AI automation brand and user flow experience.
+This project was built to strengthen my skills in frontend development, responsive design, UI/UX, and JavaScript while creating a realistic SaaS product experience.
 
 ## Author
 
