@@ -40,9 +40,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Accessibility: Skip navigation link -->
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- Site navigation -->
+    <!-- ========== HEADER & NAVIGATION ========== -->
     <header class="site-header">
       <div class="container navigation">
         <a class="brand" href="#home" aria-label="NovaAI home"
@@ -91,8 +92,9 @@
       </div>
     </header>
 
+    <!-- ========== MAIN CONTENT ========== -->
     <main id="main-content">
-      <!-- Hero -->
+      <!-- Hero Section -->
       <section id="home" class="hero">
         <div class="hero-orb hero-orb--one" aria-hidden="true"></div>
         <div class="hero-orb hero-orb--two" aria-hidden="true"></div>
@@ -121,7 +123,7 @@
           <div class="product-preview">
             <!-- Lightweight local product preview tailored to NovaAI's workflow platform. -->
             <img
-              src="Images/novaai-dashboard.svg"
+              src="./assets/novaai-dashboard.svg"
               width="1536"
               height="1024"
               fetchpriority="high"
@@ -135,7 +137,7 @@
         </div>
       </section>
 
-      <!-- Social proof -->
+      <!-- Social Proof Section -->
       <section class="logo-strip" aria-label="Trusted by ambitious teams">
         <div class="container">
           <small>TRUSTED BY TEAMS AT</small><strong>vertex</strong
@@ -144,7 +146,7 @@
         </div>
       </section>
 
-      <!-- Product features -->
+      <!-- Features Section -->
       <section id="features" class="section section--soft">
         <div class="container">
           <header class="section-heading">
@@ -203,7 +205,7 @@
         </div>
       </section>
 
-      <!-- Metrics -->
+      <!-- Metrics Section -->
       <section class="metrics">
         <div class="container">
           <div>
@@ -225,7 +227,7 @@
         </div>
       </section>
 
-      <!-- Process -->
+      <!-- How It Works Section -->
       <section id="how-it-works" class="section">
         <div class="container">
           <header class="section-heading">
@@ -271,7 +273,7 @@
         </div>
       </section>
 
-      <!-- Pricing -->
+      <!-- Pricing Section -->
       <section id="pricing" class="section section--soft">
         <div class="container">
           <header class="section-heading">
@@ -365,7 +367,7 @@
         </div>
       </section>
 
-      <!-- Testimonials -->
+      <!-- Testimonials Section -->
       <section class="section">
         <div class="container">
           <header class="section-heading">
@@ -430,7 +432,7 @@
         </div>
       </section>
 
-      <!-- FAQ -->
+      <!-- FAQ Section -->
       <section id="faq" class="section section--soft">
         <div class="container faq-layout">
           <header class="section-heading section-heading--left">
@@ -466,7 +468,7 @@
         </div>
       </section>
 
-      <!-- Final call-to-action -->
+      <!-- Final Call-to-Action -->
       <section class="final-cta">
         <div class="container">
           <p class="eyebrow">Ready when you are</p>
@@ -489,6 +491,7 @@
       </button>
     </div>
 
+    <!-- ========== FOOTER ========== -->
     <!-- Professional footer -->
     <footer>
       <div class="container footer-grid">
@@ -540,7 +543,8 @@
       </div>
     </footer>
 
-    <!-- Auth modal: JavaScript switches between login, register and reset views. -->
+    <!-- ========== MODALS & INTERACTIVE COMPONENTS ========== -->
+    <!-- Authentication Modal: JavaScript switches between login, register and password reset views -->
     <div
       id="authModal"
       class="auth-modal"
@@ -691,7 +695,7 @@
       </div>
     </div>
 
-    <!-- Front-end checkout demo: no real payment information is processed. -->
+    <!-- Checkout Modal: Front-end demo - no real payment information is processed -->
     <div
       id="checkoutModal"
       class="auth-modal checkout-modal"
@@ -744,6 +748,8 @@
         </form>
       </div>
     </div>
+
+    <!-- AI Chat Assistant Widget -->
     <aside class="chat-widget" aria-label="NovaAI chat assistant">
       <button
         id="chatToggle"
@@ -776,6 +782,8 @@
         <button id="clearChat" class="clear-chat" type="button">Clear chat</button>
       </section>
     </aside>
+
+    <!-- Notifications & Scripts -->
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
     <script src="script.js" defer></script>
   </body>

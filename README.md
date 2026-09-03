@@ -12,19 +12,23 @@ https://nova-ai-automation.netlify.app/
 
 ### Dashboard
 
-![Nova Ai Dashboard](./Images/dashboard.png)
+![Nova Ai Dashboard](./screenshots/dashboard.png)
 
 ### Features
 
-![Nova AI Features](./Images/features.png)
+![Nova AI Features](./screenshots/features.png)
 
 ### How It Works
 
-![Nova AI How It Works](./Images/how%20its%20work.png)
+![Nova AI How It Works](./screenshots/how%20its%20work.png)
+
+### Pricing
+
+![Nova AI Pricing](./screenshots/pricing.png)
 
 ### Responsive
 
-![Nova AI Responsive](./Images/responsive.png)
+![Nova AI Responsive](./screenshots/responsive.png)
 
 ## Features
 
@@ -49,7 +53,8 @@ https://nova-ai-automation.netlify.app/
 index.html
 style.css
 script.js
-Images/
+screenshots/
+assets/
 README.md
 ```
 
